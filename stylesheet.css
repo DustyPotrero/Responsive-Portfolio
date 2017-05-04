@@ -1,0 +1,308 @@
+body{
+	font-family: Arial, serif;
+	background-image: url(playstation-pattern.png);
+	background-color: #ccc;
+	margin: 0px;
+}
+
+header {
+	background-color: #ffffff;
+  	border-bottom: 2px #cccccc solid;
+ }
+
+ .header-content{
+ 	display: flex;
+ 	justify-content: space-between;
+ }
+
+ .main-content{
+ 	padding: 50px 0;
+ }
+
+ .content-width{
+ 	width: 960px;
+ 	margin-left: 20px;
+ 	margin-right: 20px;
+ }
+
+ .container-width{
+ 	display: flex;
+	justify-content: center;
+ }
+ .navigation-content{
+ 	display: flex;
+ 	flex: 1;
+ 	justify-content: flex-end;
+ }
+ .navigation-content ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.portfolio-row{
+	display: flex;
+}
+.portfolio-row + .portfolio-row{
+	margin-top: 20px;
+}
+
+
+li {
+    display: inline;
+    margin: 5px 30px;
+}
+
+h1 {
+    margin: 0px;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 10px;
+}
+
+h2{
+	padding-bottom: 10px;
+	border-bottom: 2px solid grey;
+	color: #4aaaa5;
+}
+
+h1, h2, h3 {
+    font-family: serif;
+
+}
+
+h3{
+	border-bottom: 2px solid grey;
+	color: teal;
+}
+article{
+	overflow: auto;
+	display: flex;
+}
+
+div.article-content{
+	background-color: white;
+	padding: 20px;
+	flex: 1;
+	border-style: solid;
+    border-color: grey;
+
+}
+div.box
+{
+	vertical-align: top;
+	display: inline-block;
+	background-color: white;
+	width: 55%;
+	padding: 20px;
+	border-style: solid;
+    border-color: grey;    
+}
+
+div.portfolio{
+	vertical-align: top;
+	display: inline-block;
+	background-color: white;
+	width: 55%;
+	padding: 20px;
+	margin: 50px;
+	border-style: solid;
+    border-color: grey;
+}
+
+input[type="text"]{
+	width: 100%;
+	margin: 10px;
+}
+
+div.contact{}
+
+img{
+	float: left;
+	margin-right: 10px;
+	width: 200px;
+	height: 230px;
+}
+
+
+p.divp{
+	display: block;
+	line-height: 2em;
+	color: #777777
+	margin-left: 30px;
+}
+
+aside {
+    background-color: white;
+    width: 200px;
+    padding: 20px;
+    margin-left: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: grey;
+    border-image: initial;
+    align-self: flex-start;
+}
+
+.contact-aside{
+	
+}
+
+aside.img{
+	height: 50px;
+	width: 50px;
+}
+footer {
+    background-color: #666666;
+    padding-bottom: 30px;
+    border-top: 10px solid #4aaaa5;
+    text-align: center;
+    font-size: 10px;
+}
+
+.contact{
+	height: 50px;
+	width: 50px;
+}
+
+.contact2{
+	vertical-align: top;
+	display: inline-block;
+	background-color: white;
+	width: 55%;
+	padding: 20px;
+	margin: 50px;
+	border-style: solid;
+    border-color: grey;
+}
+
+div.picture{
+	border: 1px solid #cccccc;
+	padding: 0px;
+	padding-top: 100px;
+	padding-bottom: 20px;
+	height: 50px;
+	flex: 1;
+
+}
+
+div.picture div{
+	background-color: #4aaaa5;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+
+}
+div.pic1{
+	background-image: url(choc.JPG) ;
+	background-size: cover;
+}
+
+div.pic2{
+	background-image: ;
+}
+
+.button{
+		background-color: #4aaaa5;
+		font-size: 15px;
+		color: white;
+		border: 1px solid white;
+		padding: 10px 20px;
+}
+
+
+/*@media only screen and (max-width: 980px) {
+	img{
+		float: none;
+		width: 100%;
+		height: auto;
+	}
+	header{
+		width: 768px;
+	}
+	div.index{
+		width: 460px;
+		margin-left: 0px;
+	}
+	aside{
+		width: 163px;
+		margin-right: 0px;
+	}
+	article{
+		width: 768px;
+		margin: 0 auto;
+	}
+
+
+}*/
+
+@media only screen and (max-width: 640px) {
+	.header-content{
+		flex-direction: column;
+	}
+	.title-content{
+		align-self: stretch;
+		text-align: center;
+	}
+	.navigation-content{
+		padding: 10px 0;
+		justify-content: center;
+	}
+	.main-content{
+		padding: 20px;
+	}
+	img{
+		width: 300px;
+		height: 200px;
+		margin-bottom: 5px;
+	}
+	.portfolio-row{
+		flex-direction: column;
+	}
+	.picture + .picture{
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.main-content{
+		flex-direction: column;
+		width: auto;
+		flex: 1;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	aside{
+		margin-left: 0;
+		align-self: stretch;
+		width: auto;
+	}
+	.article-content{
+		margin-bottom: 50px;
+	}
+	.content-width{
+		margin-left: initial;
+		margin-right: initial;
+	}
+}
+
+@media only screen and (min-width: 641px){
+	.picture + .picture{
+		margin-left: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

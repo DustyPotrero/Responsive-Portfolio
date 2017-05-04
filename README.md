@@ -1,2 +1,2 @@
-# Responsive-Portfolio
-Responsive Portfolio Homework 
+# Dustypotrero.github.io
+John Schmidt's Repository
